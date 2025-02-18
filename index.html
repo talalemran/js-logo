@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Logo</title>
+    <style>
+        canvas#JS_logo {
+            background-color: #E9D54D;
+            position:absolute;
+            top:0;bottom:0;right:0;left:0;
+            margin:auto;
+            box-shadow: 2px 2px 6px #808080;
+        }
+    </style>
+
+</head>
+<body>
+    <canvas id="JS_logo">Your browser does not support the HTML5 canvas tag.</canvas>
+   <script>
+       let c = document.getElementById('JS_logo');
+       let ctx = c.getContext('2d');
+       c.width = 300;
+       c.height = 300;
+       ctx.font = "160px Arial";
+       ctx.fillText("JS", 100, 280);
+       let txBold = ctx.txBold();
+       ctx.style.color = "#2E2F2E";
+   </script> 
+</body>
+</html>
